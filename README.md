@@ -1,2 +1,3 @@
 # fb_bruteforce
-Fb bruteforce
+Fb bruteforce 
+برنامج فكرته التخمين على رمز استعادة كلمه المرور المرسل عن طريق الايميل 
